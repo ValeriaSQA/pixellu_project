@@ -19,7 +19,7 @@ class Login {
 
     async login() {
         await this.loginButton.click();
-        await expect(this.SmartSlidesButton).toBeVisible;
+        await expect(this.SmartSlidesButton).toBeVisible();
         await this.SmartSlidesButton.click();
         await expect(this.page.locator('h1[class="ulf-form-instructions"]')).toContainText('Enter your email address');
     }
@@ -27,23 +27,23 @@ class Login {
     async enterEmail() {
         await this.emailField.type('ta_interview@pixellu.com');
         await this.continueButton.click();
-        await expect(this.processingButton).toBeVisible;
+        await expect(this.processingButton).toBeVisible();
     }
 
     async enterPassword() {
         await this.passwordField.type('ta_interview');
         await this.signInButton.click();
-        await expect(this.processingButton).toBeVisible;
+        await expect(this.processingButton).toBeVisible();
     }
 
     async slideShowsScreenDisplaying() {
-        await expect(this.addSlideButton).toBeVisible;
+        await expect(this.addSlideButton).toBeVisible();
     }
 
     async enterEmptyValue() {
         await this.emailField.type('');
         await this.continueButton.click();
-        await expect(this.processingButton).toBeVisible;
+        await expect(this.processingButton).toBeVisible();
     }
 
     async loginError() {
