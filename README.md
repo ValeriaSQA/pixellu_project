@@ -2,7 +2,7 @@
 
 To set up the Playwright framework follow [Playwright DOCUMENTATION](https://playwright.dev/).
 
-### Pre-requisites
+### Prerequisites
 
 - Node.js 16.14.X
 
